@@ -1,0 +1,5 @@
+npm run build
+npm init
+
+npm install 
+npm i lib --save-dev

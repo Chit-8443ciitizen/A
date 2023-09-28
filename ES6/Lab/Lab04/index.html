@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .code{
+            font-size: 20px;
+            color: rgb(233, 133, 1);
+        }
+        .giaithich{
+            font-size: 20px;
+            color: rgb(24, 0, 101);
+        }
+    </style>
+</head>
+<body>
+    <p>Xem kết quả ở cửa sổ console.log nhe</p>
+    <div>
+        <p class="code">const axios = require('axios') <br>
+            //1 <br>
+            const fetchUrls = async(urls) =>{ <br>
+                const results1 = [] <br>
+                for (const url of urls){ <br>
+                    const res = await axios.get(url) <br>
+                    results1.push(res) <br>
+                }
+                return results1;<br>
+            } <br>
+            // 2 <br>
+            const fetchUrlsParallel = async(urls)=>{ <br>
+                const results2 = await Promise.all(<br>
+                    urls.map(function(url){<br>
+                        return axios.get(url);<br>
+                    })<br>
+                );<br>
+                return results2;<br>
+            }
+        </p>
+        <p class="giaithich">
+            Đoạn code đầu tiên (fetchUrls) sử dụng một vòng lặp for...of kết hợp với từ khóa 
+            await để gửi các yêu cầu HTTP tuần tự. Đối với mỗi URL trong mảng urls, nó gửi một 
+            yêu cầu HTTP sử dụng axios.get và chờ đợi cho đến khi yêu cầu hoàn thành. 
+            Kết quả được trả về từ mỗi yêu cầu được đẩy vào mảng results1. 
+            Cuối cùng, mảng results1 được trả về khi tất cả các yêu cầu đã hoàn thành.
+        </p>
+
+        <p class="giaithich">
+            Đoạn code thứ hai (fetchUrlsParallel) sử dụng phương pháp Promise.all để gửi các yêu
+             cầu HTTP đồng thời. Thay vì sử dụng vòng lặp, nó sử dụng phương thức map để tạo một
+              mảng mới chứa các promise trả về từ các yêu cầu HTTP. Sau đó, Promise.all được sử 
+              dụng để chờ tất cả các promise trong mảng hoàn thành. Khi tất cả các yêu cầu đã
+               hoàn thành, Promise.all trả về một mảng chứa kết quả của tất cả các yêu cầu HTTP. 
+        </p>
+    </div>
+    <div id="bai3">link fetch api :
+        <br>
+        https://63a16120a543280f77548d0f.mockapi.io/tx3en1cj8hjaw/tqwu5d31kjdih2o
+    </div>
+</body>
+<script src="Lab04.js"></script>
+</html>

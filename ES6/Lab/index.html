@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PD06987-LAB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--mY622Qoc--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/398a310kjdiv647cld1y.jpg" alt="#">
+        <h2 class="animate-charcter"> Bài Lab ECMAScript</h2>
+        <h3></h3>
+
+  
+    </header>
+
+
+
+    <section >
+            <button onclick="iframeLab01()">  LAB 01    </button>
+            <button onclick="iframeLab02()">  LAB 02    </button>            
+            <button onclick="iframeLab03()">  LAB 03    </button>           
+            <button onclick="iframeLab04()">  LAB 04    </button>           
+            <button onclick="iframeLab05()">  LAB 05    </button>           
+            <button onclick="iframeLab06()">  LAB 06    </button>           
+            <button onclick="iframeLab07()">  LAB 07    </button>           
+            <button onclick="iframeLab08()">  LAB 08    </button>                 
+
+            <p id="demo" ></p>
+            <iframe src="fun.html" target="page"></iframe>
+
+
+
+        
+    </section>
+
+    <footer>
+        Trường: Cao Đẳng FPT Polytechnic Đà Nẵng <br>
+        Môn: ECMAScript - Lớp: 18201 <br>
+        Giảng viên: Mr Phan Văn Chiến <br>
+        Sinh viên: Huỳnh Minh Hòa | © Copyright 2023<br>
+    </footer>
+
+</body>
+    <script>
+        // Lấy đối tượng
+        var iframe = document.getElementsByTagName('iframe')[0];
+        var name_lab = document.querySelectorAll('button');
+
+        // truyền src, tển mục lab
+        function iframeLab01(){    
+            iframe.setAttribute('src', "Lab01/index.html") ;
+            document.getElementById('demo').innerHTML= name_lab[0].innerText;
+          }
+        function iframeLab02(){    
+            iframe.setAttribute('src', "Lab02/index.html") ;
+            document.getElementById('demo').innerHTML= name_lab[1].innerText;  
+        }
+        function iframeLab03(){    
+            iframe.setAttribute('src', "Lab03/index.html") ;
+            document.getElementById('demo').innerHTML= name_lab[2].innerText;  
+        }
+        function iframeLab04(){    
+            iframe.setAttribute('src', "Lab04/index.html") ;
+            document.getElementById('demo').innerHTML= name_lab[3].innerText;  
+        }
+        function iframeLab05(){    
+            iframe.setAttribute('src', "Lab05/index.html") ; 
+            document.getElementById('demo').innerHTML= name_lab[4].innerText; 
+        }
+       
+        function iframeLab06(){    
+            iframe.setAttribute('src', "Lab06/index.html") ;
+            document.getElementById('demo').innerHTML= name_lab[5].innerText;     
+        }
+        function iframeLab07(){    
+            iframe.setAttribute('src', "Lab07/index.html") ;
+            document.getElementById('demo').innerHTML= name_lab[6].innerText;
+        }
+        function iframeLab08(){    
+            iframe.setAttribute('src', "Lab08/index.html") ;
+            document.getElementById('demo').innerHTML= name_lab[7].innerText;
+        }
+  
+    </script>
+</html>
