@@ -1,0 +1,23 @@
+// Creating the React app with Typescript
+npx create-react-app app --template typescript
+cd app
+
+// Adding Tailwind
+npm install -D tailwindcss postcss autoprefixer 
+npx tailwindcss init -p
+
+//Next open up the created "tailwind.config.js" file and add the following to "content":
+content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+],
+
+// Next we need to add the Tailwind directives to the "src/index.css" file, add the following to the top of the file:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+How to start localhost:3000
+open terminal
+cd vibrant
+npm install
+npm start

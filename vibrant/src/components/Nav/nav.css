@@ -1,0 +1,29 @@
+.animate-character{
+    
+    background-image: linear-gradient(
+        -90deg,
+        #fff 0%,
+        #63FFD1 29%,
+        #BF9DFF 60%,
+        #FFEA22 85%,
+        #FFFFFF 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 100% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* animation: textclip 2s linear infinite; */
+    display: inline-block;
+    /* font-size: 140px; */
+}
+
+/* @keyframes textclip {
+    to {
+        background-position: 100% center;
+    }
+} */
+

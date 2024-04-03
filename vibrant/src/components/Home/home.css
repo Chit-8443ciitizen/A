@@ -1,0 +1,6 @@
+.bgImg{
+    background-image: url('../../assets/images/bg_banner.png');  
+    background-repeat: no-repeat ;
+    background-size: calc(100% ) calc(100% ) !important; /* Sử dụng calc() để tính toán kích thước */
+    background-position: center !important; /* Căn giữa hình ảnh */
+}
